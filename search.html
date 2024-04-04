@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suchergebnisse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Suchergebnisse</h1>
+    <ul id="searchResults"></ul>
+
+    <script src="search.js"></script>
+
+    <script>
+        // Funktion zum Auslesen des Suchbegriffs aus der URL
+        function getSearchQuery() {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            return urlParams.get('query');
+        }
+
+        // Funktion zum Anzeigen der Suchergebnisse basierend auf dem Suchbegriff
+        function displaySearchResults(query) {
+            const searchResultsElement = document.getElementById('searchResults');
+            // Simuliere hier das Suchergebnis (z. B. aus einer Datenbankabfrage)
+            // In diesem Beispiel verwenden wir nur einen Dummy-Text
+            const dummyResults = [
+                "Suchergebnis 1",
+                "Suchergebnis 2",
+                "Suchergebnis 3"
+            ];
+            searchResultsElement.innerHTML = ''; // Leere das vorherige Ergebnis
+            if (dummyResults.length === 0) {
+                searchResultsElement.innerHTML = '<li>Keine Ergebnisse gefunden</li>';
+            } else {
+                dummyResults.forEach(function(result) {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = result;
+                    searchResultsElement.appendChild(listItem);
+                });
+            }
+        }
+
+        // Hauptfunktionsaufruf
+        document.addEventListener("DOMContentLoaded", function() {
+            const searchQuery = getSearchQuery();
+            if (searchQuery) {
+                displaySearchResults(searchQuery);
+            }
+        });
+    </script>
+
+
+
+    <header>
+        <nav>
+            <ul class="navigation-links">
+                <!-- Navigationslinks -->
+                <li><a href="index.html">Korallenriffe</a></li>
+                <li><a href="korallenriffe.html">Korallenriffe</a></li>
+                <li><a href="tiefsee.html">Tiefsee</a></li>
+                <li><a href="polare_regionen.html">Polare Regionen</a></li>
+                <li><a href="tropische_korallenriffe.html">Tropische Korallenriffe</a></li>
+                <li><a href="meeresvögel.html">Meeresvögel</a></li>
+                <li><a href="meeressäuger.html">Meeressäuger</a></li>
+                <li><a href="fakten_statistiken.html">Fakten und Statistiken</a></li>
+                <li><a href="bildergalerie.html">Bildergalerie</a></li>
+                <li><a href="kontakt_impression.html">Kontakt/Impression</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hier werden die Suchergebnisse angezeigt -->
+    </main>
+    
+
+
+
+
+    <!-- Footer mit Datenschutz-Link und Akzeptieren-Button -->
+    <footer>
+        <!-- Navigation unten -->
+        <nav id="navBottom">
+            <ol class="horizontal-list">
+                <li><a href="#top">Nach oben</a></li>
+            </ol>
+        </nav>
+
+        <!-- Trennbalken zwischen Footer und unterer Navigation -->
+        <div id="separator"></div>
+
+
+        <p class="footer-text">&copy; 2024 Unterwasserwelt GmbH | <a href="datenschutz.html" class="footer-text">Datenschutz</a></p>
+        <div class="button-container">
+            <button id="acceptButton" onclick="akzeptieren()">Ich habe es verstanden und akzeptiere</button>
+        </div>
+        <!-- CSRF-Token -->
+        <input type="hidden" id="csrfToken" value="GENERATED_CSRF_TOKEN">
+
+        <div class="social-media">
+            <!-- Social-Media-Links hier -->
+            <a href="https://github.com/NadiRuthG" target="_blank" rel="noopener noreferrer">
+                <img src="bilder/github-logo.png" alt="GitHub-Logo">
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,473 @@
+<!-- Deklaration des Dokumenttyps HTML -->
+<!DOCTYPE html>
+<!-- Beginn des HTML-Dokuments mit Sprachattribut Deutsch -->
+<html lang="de">
+<!-- Kopfbereich des Dokuments -->
+<head>
+    <!-- Zeichencodierung des Dokuments -->
+    <meta charset="UTF-8">
+    <!-- Einstellung der Anzeigegrösse für mobile Geräte -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titel des Dokuments -->
+    <title>Fakten und Statistiken - Unterwasserwelt</title>
+    <!-- Einbindung einer externen CSS-Datei -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Externes JavaScript für Interaktivität -->
+    <script src="script1.js"></script>
+    <script src="gallery.js"></script>
+    <script src="search.js"></script>
+
+    <!-- Stile für die zusätzlichen Elemente -->
+    
+    <style>
+        /* Stil für die Bilder in der Galerie mit abgerundeten Ecken */
+        .gallery img {
+            width: 300%;
+            height: auto;
+            border-radius: 10px; /* Abgerundete Ecken mit einer Radiusgrösse von 10px */
+        }
+        /* Stil für die Galeriecontainer */
+        .gallery-container {
+            display: flex;
+            flex-direction: row-reverse; /* Reihenfolge der Flex-Elemente umkehren */
+            justify-content: space-between; /* Platz zwischen den Elementen */
+            align-items: center;
+        }
+
+        /* Stil für den Text */
+        .text-container {
+            width: 45%; /* Breite des Textcontainers anpassen */
+        }
+
+        /* Stil für den Bildcontainer */
+        .image-container {
+            width: 45%; /* Breite des Bildcontainers anpassen */
+            text-align: center;
+        }
+        /* Stil für den Trennbalken */
+        #separator {
+            width: 100%;
+            height: 1px;
+            background-color: #ccc; /* Farbe des Balkens */
+            margin-top: 20px; /* Abstand zwischen Balken und Footer */
+        }
+
+        /* Stil für den Footer */
+        footer {
+            position: relative; /* Positionierung relativ zum Dokument */
+            padding-top: 20px; /* Platz oberhalb des Fussbereichs für den Balken */
+        }
+
+        /* Stil für den Button */
+        #acceptButton {
+            margin-top: 20px; /* Abstand zum vorherigen Element */
+        }
+    </style>
+</head>
+
+<!-- Hauptinhalt des Dokuments -->
+<body>
+    <!-- Überschrift der Webseite -->
+    <h1>Bildergalerie</h1>
+    <!-- Kopfbereich der Webseite -->
+    <header>
+        <!-- Navigationsbereich der Webseite -->
+        <nav>
+            <!-- Ungeordnete Liste für Navigationslinks -->
+            <ul>
+                <!-- Navigationslinks -->
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="korallenriffe.html">Korallenriffe</a></li>
+                <li><a href="tiefsee.html">Tiefsee</a></li>
+                <li><a href="polare_regionen.html">Polare Regionen</a></li>
+                <li><a href="tropische_korallenriffe.html">Tropische Korallenriffe</a></li>
+                <li><a href="meeresvögel.html">Meeresvögel</a></li>
+                <li><a href="meeressäuger.html">Meeressäuger</a></li>
+                <li><a href="bildergalerie.html">Bildergalerie</a></li>
+                <li><a href="fakten_statistiken.html">Fakten und Statistiken</a></li>
+                <li><a href="kontakt_impression.html">Kontakt/Impression</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hauptinhalt der Webseite -->
+    <main>
+        <!-- Bildergalerie -->
+        <section class="gallery1">
+            <h2>Bildergalerie</h2>
+            <h3>Korallenriffe</h3>
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Lebensraum für Meereslebewesen, symbiotisch mit Algen, entscheidendes Ökosystem.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/korallenriffe/korallenriffe_startseite.jpg" alt="Bild eines Korallenriffs an der Oberfläche des Meeres">
+                    <p class="image-source">Quelle: <a href="https://www.nationalgeographic.de/bezahlter-inhalt-hoffnung-fuer-korallenriffe" target="_blank">nationalgeographic.de</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Korallen bilden faszinierende Riffe, bieten Lebensraum, Schutz im Meer.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="./bilder/korallenriffe/fische.jpg" alt="Fische">
+                    <p class="image-source">Quelle: <a href="https://www.planet-wissen.de/natur/meer/korallenriffe/index.html" target="_blank">planet-wissen.de</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Architekten der Unterwasserwelt, bilden Riffe, wichtige Ökosysteme.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="./bilder/korallenriffe/korallen.jpg" alt="Korallenriffe - Korallen">
+                    <p class="image-source">Quelle: <a href="https://www.fr.de/wissen/wenn-korallen-sterben-sterben-kuesten-13511424.html" target="_blank">fr.de</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p> Lebensraum für vielfältige Krebsarten, wichtiges Ökosystem-Gleichgewicht.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="./bilder/korallenriffe/krebse.jpg" alt="Korallenriffe - Krebse">
+                    <p class="image-source">Quelle: <a href="https://member-diving.com/so-fotografiert-man-krebse-schnecken-co/" target="_blank">member-diving.com</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Muscheln filtern Wasser, bieten Lebensraum, verbessern Wasserqualität.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="./bilder/korallenriffe/muscheln.jpg" alt="Korallenriffe - Muscheln">
+                    <p class="image-source">Quelle: <a href="https://www.alamy.de/in-den-korallen-am-boden-des-roten-meeres-lauert-eine-blaue-muschel-die-auf-beute-wartet-image440756034.html" target="_blank">alamy.de</a></p>
+                </div>
+            </div>
+
+            <h3>Tiefsee</h3>
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Geheimnisvolle Welt, unentdeckte Arten, extreme Bedingungen, leuchtende Quallen.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/tiefsee/tiefsee_startseite.jpg" alt="Tiefsee">
+                    <p class="image-source">Quelle: <a href="https://lr-medienhaus.de/gefahr-fuer-die-tiefsee/" target="_blank">lr-medienhaus.de</a></p>
+                </div>
+            </div>
+                
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Biolumineszente Quallen, faszinierendes Glühen, geheimnisvolle Tiefseeatmosphäre, einzigartige Lebewesen.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/tiefsee/leuchtende_quallen.jpg" alt="Tiefsee - Leuchtende Quallen">
+                    <p class="image-source">Quelle: <a href="https://de.freepik.com/fotos-premium/tiefsee-leuchtende-quallen-auf-dunklem-hintergrund-generative-ai_41999356.htm" target="_blank">de.freepik.com</a></p>
+                </div>
+            </div>
+           
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>An extreme Tiefe angepasst, bizarre Formen, leuchtende Organe, riesige Mäuler.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/tiefsee/tiefseefische.jpg" alt="Tiefsee - Tiefseefische">
+                    <p class="image-source">Quelle: <a href="https://www.pinterest.com/pin/576953402252087818/" target="_blank">pinterest.com</a></p>
+                </div>
+            </div>
+               
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Gigantische, rätselhafte Wesen, intelligent, mit tentakelbewehrten Armen, Meeresraum-Tarnung.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/tiefsee/gigantische_kraken.jpg" alt="Tiefsee - Gigantische Kraken">
+                    <p class="image-source">Quelle: <a href="https://www.meerwasser-lexikon.de/tiere/9590_Pinnoctopus_cordiformis.htm" target="_blank">meerwasser-lexikon.de</a></p>
+                </div>
+            </div>
+
+            <h3>Polare Regionen</h3>
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p> Arktis, Antarktis - Heimat von Robben, Pinguinen, Walen, Seevögeln.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/polarregionen/polarregionen_startseite.jpg" alt="Polare Regionen">
+                    <p class="image-source">Quelle: <a href="https://www.nau.ch/news/forschung/arktischer-ozean-erwarmte-sich-fruher-als-gedacht-66053640" target="_blank">nau.ch</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Antarktis, Arktis - Kaiser-, Esels-, Adeliepinguine; flugunfähig, Meister des Schwimmens, Tauchens.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/polarregionen/pinguine.jpg" alt="Polare Regionen - Pinguine">
+                    <p class="image-source">Quelle: <a href="https://www.welt.de/reise/article4396316/Die-Fotojagd-auf-Eisbaeren-ist-nicht-ungefaehrlich.html" target="_blank">welt.de</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p> Arktis, Antarktis - Ringel-, Bart-, Weddellrobben; leben im Wasser, Packeis-Plattform.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/polarregionen/robben.jpg" alt="Polare Regionen - Robben">
+                    <p class="image-source">Quelle: <a href="https://www.planet-wissen.de/technik/werkstoffe/kunststoff/plastik-im-meer-106.html" target="_blank">planet-wissen.de</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Arktis, Antarktis - Albatrosse, Sturmvögel, Möwen, Eissturmvögel; Meer, Nahrung, Brutgebiete.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/polarregionen/seevögel.jpg" alt="Polare Regionen - Seevögel">
+                    <p class="image-source">Quelle: <a href="https://follow-polarstern.awi.de/blog/01-12-2022/" target="_blank">follow-polarstern.awi.de</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Arktis, Antarktis - Buckelwale, Zwergwale, Belugas, Orcas; Nahrung, Fortpflanzung.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/polarregionen/wale.jpg" alt="Polare Regionen - Wale">
+                    <p class="image-source">Quelle: <a href="https://www.deutschlandfunk.de/erstes-internationales-hochseeabkommen-formell-beschlossen-108.html" target="_blank">deutschlandfunk.de</a></p>
+                </div>
+            </div>
+
+            <h3>Tropische Korallenriffe</h3>
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Farbenprächtige Riffe mit Clownfischen, Seepferdchen, Rochen, Haien – Biodiversität-Hotspot.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/tropische_Korallenriffe/tropische_Korallenriffe_startseite.jpg" alt="Tropische Korallenriffe">
+                    <p class="image-source">Quelle: <a href="https://conservation.reefcause.com/" target="_blank">conservation.reefcause.com</a></p>
+                </div>
+            </div> 
+            
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Clownfische, oder Anemonenfische, leben in Symbiose mit Seeanemonen, profitieren von ihrem Schutz und helfen bei der Nahrung.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/tropische_Korallenriffe/clownfische.jpg" alt="Tropische Korallenriffe - Clownfische">
+                    <p class="image-source">Quelle: <a href="https://www.technologynetworks.com/genomics/news/gene-switches-help-nemo-fish-adapt-to-life-on-the-coral-reef-373250" target="_blank">technologynetworks.com</a></p>
+                </div>
+            </div>
+            
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Seepferdchen sind einzigartige Wesen mit einem unverkennbaren Aussehen und Verhalten.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/tropische_Korallenriffe/seepferdchen.jpg" alt="Tropische Korallenriffe - Seepferdchen">
+                    <p class="image-source">Quelle: <a href="https://www.zoobasel.ch/de/tiere/tierlexikon/tierbeschreibung/162/seepferdchen/" target="_blank">zoobasel.ch</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Rochen sind flache, stachelige Fische, die oft als Symbole der Meereswelt gelten.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/tropische_Korallenriffe/rochen.jpg" alt="Tropische Korallenriffe - Rochen">
+                    <p class="image-source">Quelle: <a href="https://www.viventura.de/tiere/galapagos-stingray-manta-ray-golden-ray" target="_blank">viventura.de</a></p>
+                </div>
+            </div>
+
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Haie sind faszinierende und oft missverstandene Raubtiere der Meere.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/tropische_Korallenriffe/haie.jpg" alt="Tropische Korallenriffe - Haie">
+                    <p class="image-source">Quelle: <a href="https://de.freepik.com/fotos-premium/riff-mit-einer-vielzahl-von-hart-und-weichkorallen-und-haien-im-hintergrund-konzentrieren-sie-sich-auf-korallen-haie-sind-nicht-im-fokus-malediven-korallenriff-im-indischen-ozean_24002089.htm" target="_blank">de.freepik.com</a></p>
+                </div>
+            </div>
+
+            <h3>Meeresvögel</h3>
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Von Albatrossen über Möwen bis hin zu Pinguinen sind Vögel im Meer weit verbreitet.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/meeresvögel/meeresvögel_startseite.jpg" alt="Meeresvögel">
+                    <p class="image-source">Quelle: <a href="https://www.sueddeutsche.de/panorama/wetter-sipplingen-schubboot-bei-unwetter-auf-dem-bodensee-gesunken-dpa.urn-newsml-dpa-com-20090101-220624-99-786569" target="_blank">sueddeutsche.de</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Albatrosse sind majestätische Meeresvögel mit riesigen Flügelspannweiten, die es ihnen ermöglichen, über grosse Entfernungen über den Ozean zu gleiten.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/meeresvögel/albatrosse.jpg" alt="Meeresvögel - Albatrosse">
+                    <p class="image-source">Quelle: <a href="https://www.welt.de/wissenschaft/article235253574/Klimawandel-gefaehrdet-Paarbindung-treuer-Albatrosse.html" target="_blank">welt.de</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Möwen sind anpassungsfähige Vögel, die an Küsten, auf offener See und sogar in städtischen Gebieten zu finden sind.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/meeresvögel/möwen.jpg" alt="Meeresvögel - Möwen">
+                    <p class="image-source">Quelle: <a href="https://stock.adobe.com/de/images/mowen-vogel-meeresvogel-futter-meer-mittelmeer-ligurien-portovenere-italien-urlaub/111822948" target="_blank">stock.adobe.com</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Pinguine sind faszinierende Vögel, die hauptsächlich in den südlichen Hemisphären beheimatet sind und sich perfekt an das Leben im Meer angepasst haben.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/meeresvögel/pinguine.jpg" alt="Meeresvögel - Pinguine">                <p class="image-source">Quelle: <a href="https://www.spiegel.de/wissenschaft/natur/bei-voegeln-sind-gute-taucher-immer-schlechte-flieger-a-900799.html" target="_blank">spiegel.de</a></p>
+                </div>
+            </div>
+
+            <h3>Meeressäuger</h3>
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Wale, Delfine, Robben und Seekühe zählen zu den faszinierendsten Bewohnern der Meere, die durch ihre Intelligenz und vielfältigen Lebensweisen beeindrucken.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/meeressäuger/meeressäuger_startseite.jpg" alt="Meeressäuger">
+                    <p class="image-source">Quelle: <a href="https://www.mdr.de/wissen/umwelt-mehr-plastik-muell-meer-plastikstroeme-ocean-cleanup-100.html" target="_blank">mdr.de</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Wale, majestätische Giganten der Meere, zählen zu den grössten Lebewesen auf der Erde. Sie ernähren sich von einer Vielzahl von Meeresbewohnern und spielen eine entscheidende Rolle im Ökosystem der Ozeane. Ihre beeindruckende Grösse und elegante Bewegungen faszinieren Menschen weltweit.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/meeressäuger/wale1.jpg" alt="Meeressäuger - Wale">
+                    <p class="image-source">Quelle: <a href="https://www.nationalgeographic.de/tiere/2023/08/whale-watching-in-deutschland-diese-wale-leben-in-nord-und-ostsee" target="_blank">nationalgeographic.de</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Delfine, intelligente und verspielte Meeresbewohner, sind für ihre sozialen Interaktionen und akrobatischen Fähigkeiten bekannt. Sie leben in Gruppen, kommunizieren durch vielfältige Lautäusserungen und Körperbewegungen und sind geschickte Jäger von Fischen und anderen Meereslebewesen.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/meeressäuger/delfin.jpg" alt="Meeressäuger - Delfin">
+                    <p class="image-source">Quelle: <a href="https://www.scinexx.de/news/biowissen/wie-delfine-die-taucherkrankheit-vermeiden/" target="_blank">scinexx.de</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Robben, an Land und im Wasser geschickt angepasst, verbringen viel Zeit sowohl im Meer als auch an den Küsten. Sie sind geschickte Schwimmer und Taucher und ernähren sich von einer Vielzahl von Meereslebewesen. Bekannt sind sie auch für ihre charakteristischen Brutkolonien, in denen sie ihre Jungen auf sandigen Stränden zur Welt bringen und aufziehen.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/meeressäuger/robben.jpg" alt="Meeressäuger - Robben">
+                    <p class="image-source">Quelle: <a href="https://pixabay.com/de/photos/tier-kegelrobben-tierwelt-seehund-5018506/" target="_blank">pixabay.com</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Seekühe, auch als Manatis bekannt, sind friedliche Pflanzenfresser, die in den warmen Küstengewässern tropischer Regionen leben. Sie ernähren sich hauptsächlich von Seegräsern und anderen Wasserpflanzen und verbringen die meiste Zeit ihres Lebens in flachen Gewässern. Aufgrund von Bedrohungen durch menschliche Aktivitäten, darunter Lebensraumverlust und Kollisionen mit Booten, sind sie gefährdete Arten und stehen unter Schutz.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/meeressäuger/seekühe.jpg" alt="Meeressäuger - Seekühe">
+                    <p class="image-source">Quelle: <a href="https://www.rnd.de/wissen/china-dugong-seekuehe-fuer-ausgestorben-erklaert-XZITBAB5NFCDOPVCVFHYEIYTIA.html" target="_blank">rnd.de</a></p>
+                </div>
+            </div>
+
+            <h3>Kontakt/Impression</h3>
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Ein Taucher erforscht eine geheimnisvolle Unterwasserhöhle voller Schönheit und Stille.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/Kontakt_Impression/bild1.jpg" alt="Bild 1">
+                    <p class="image-source">Quelle: <a href="https://salzwasser.eu/blogs/salzwasser-freunde/uli-kunz" target="_blank">salzwasser.eu</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Ein Schwarm bunter Fische bewegt sich elegant durch das klare Wasser.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/Kontakt_Impression/bild2.jpg" alt="Bild 2">
+                    <p class="image-source">Quelle: <a href="https://saint-charles.eu/blogs/news/krilloel-omega3" target="_blank">saint-charles.eu</a></p>
+                </div>
+            </div>
+
+            <!-- Weitere Bilder hier einfügen -->
+            <div class="gallery-container">
+                <div class="text-container">
+                    <p>Ein majestätischer Wal gleitet elegant durch das tiefblaue Wasser.</p>
+                </div>
+                <div class="image-container">
+                    <img class="gallery-item" src="bilder/Kontakt_Impression/bild3.jpg" alt="Bild 3">
+                    <p class="image-source">Quelle: <a href="https://www.welt.de/kmpkt/article163960089/Warum-Blauwale-sich-vor-jeder-Mahlzeit-entscheiden-muessen.html" target="_blank">welt.de</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer mit Datenschutz-Link und Akzeptieren-Button -->
+    <footer>
+        <!-- Navigation unten -->
+        <nav id="navBottom">
+            <ol class="horizontal-list">
+                <li><a href="#top">Nach oben</a></li>
+            </ol>
+        </nav>
+
+        <!-- Trennbalken zwischen Footer und unterer Navigation -->
+        <div id="separator"></div>
+
+
+        <p class="footer-text">&copy; 2024 Unterwasserwelt GmbH | <a href="datenschutz.html" class="footer-text">Datenschutz</a></p>
+        <div class="button-container">
+            <button id="acceptButton" onclick="akzeptieren()">Ich habe es verstanden und akzeptiere</button>
+        </div>
+        <!-- CSRF-Token -->
+        <input type="hidden" id="csrfToken" value="GENERATED_CSRF_TOKEN">
+
+        <div class="social-media">
+            <!-- Social-Media-Links hier -->
+            <a href="https://github.com/NadiRuthG" target="_blank" rel="noopener noreferrer">
+                <img src="bilder/github-logo.png" alt="GitHub-Logo">
+        </div>
+    </footer>
+
+</body>
+</html>

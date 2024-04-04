@@ -1,0 +1,341 @@
+/* Allgemeine Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Medienanfragen für verschiedene Geräte */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Header-Stile */
+header {
+    background-color: #006994;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    top: 60px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+}
+
+h2 {
+    margin-top: 5px;
+    z-index: 1;
+}
+
+.header-divider {
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hauptinhalt */
+main {
+    padding: 20px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section.about-section {
+    margin-bottom: 40px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #006994;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 3;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+}
+
+.footer-text {
+    color: white;
+}
+
+.button-container {
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Datenschutz-Button-Stil */
+#acceptButton {
+    display: block;
+    width: 100%; /* Sorgt dafür, dass der Button die volle Breite des Viewports einnimmt */
+    padding: 8px 0; /* Vertikales Padding, entfernt horizontales Padding */
+    background-color: #091bdb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    position: fixed; /* Fixiert den Button am unteren Rand des Viewports */
+    bottom: 0; /* Setzt den Button direkt am unteren Rand des Viewports */
+    left: 0; /* Entfernt die Notwendigkeit für eine Transformation */
+    transition: bottom 0.3s ease;
+}
+
+
+#acceptButton:hover {
+    background-color: #0056b3;
+}
+
+/* Breadcrumb-Navigation */
+nav[aria-label="Breadcrumb"] {
+    padding: 10px 0;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+    margin-bottom: 20px;
+}
+
+nav[aria-label="Breadcrumb"] ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav[aria-label="Breadcrumb"] li {
+    display: inline;
+    font-size: 0.875em;
+}
+
+nav[aria-label="Breadcrumb"] a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+nav[aria-label="Breadcrumb"] li+li:before {
+    content: "›";
+    color: #6c757d;
+    padding: 0 5px;
+}
+
+/* Responsive Anpassungen für die Breadcrumb-Navigation */
+@media only screen and (max-width: 600px) {
+    nav[aria-label="Breadcrumb"] ul {
+        text-align: left;
+    }
+}
+
+/* Galerie-Stile */
+.gallery-category {
+    display: none;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.gallery-item img {
+    max-width: 100px;
+}
+
+/* Bildvergrösserung */
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.2);
+}
+
+/* Galerie-Animationen */
+.gallery img {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.gallery img.active {
+    opacity: 1;
+}
+
+/* Bildquellen */
+.image-source {
+    margin-top: 50px;
+    font-size: 12px;
+    color: #888;
+}
+
+/* Stile für eine horizontale Liste von Links */
+.horizontal-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.horizontal-list li:last-child {
+    margin-right: 0;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Blocksatz */
+p {
+    text-align: justify;
+}
+
+
+/* CSS-Grid für die Bildergalerie */
+/* Galerie-Container */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 20px; /* Abstand zwischen den Elementen */
+    padding: 20px; /* Aussenabstand des Containers */
+}
+
+/* Einzelnese Galerie-Element */
+.gallery-item {
+    display: block;
+    margin-bottom: 10px; /* Abstand unten für jedes Bild */
+    overflow: hidden; /* Verhindert das Überlaufen des Inhalts */
+    border-radius: 5px; /* Abgerundete Ecken für jedes Bild */
+}
+
+/* Anpassung der Bildgrösse in der Galerie */
+.gallery-item img {
+    width: 100%; /* Sorgt dafür, dass das Bild die volle Breite seines Containers einnimmt */
+    height: auto; /* Behält das Seitenverhältnis des Bildes bei */
+    transition: transform 0.3s ease-in-out; /* Weiche Animation für Zoom-Effekt */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Vergrössert das Bild beim Hovern */
+}
+
+/* Responsive Anpassungen */
+@media only screen and (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Passt die Spaltenbreite für kleinere Bildschirme an */
+    }
+}
+
+/* Verstecke alle Tabinhalte außer dem ersten */
+.tabcontent {
+    display: none;
+}
+
+/* Stil für den Hover-Effekt des Tabinhalts */
+.tabcontent:hover {
+    background-color: #f1f1f1;
+}
+
+/* Anzeigen des ausgewählten Tabinhalts */
+#text {
+    display: block;
+}
+
+
+nav ol li a {
+    display: block; /* Standardanzeige für Links */
+}
+
+nav ol li a.hidden {
+    display: none; /* Verstecke Links, die nicht dem Suchbegriff entsprechen */
+}
+
+/* CSS, um das main-Element auszublenden, wenn keine Kinder vorhanden sind */
+main:empty {
+    display: none;
+}
+
+.navigation-links {
+    list-style-type: none; /* Entfernt die Standardnummerierung */
+    padding: 0; /* Entfernt den Standard-Padding */
+}
+
+.navigation-links li {
+    display: inline; /* Zeigt die Listenelemente nebeneinander an */
+    margin-right: 10px; /* Fügt einen Abstand zwischen den Listenelementen hinzu */
+}
+.navigation-links {
+    list-style-type: none;
+}
+
+.navigation-links li {
+    display: inline; /* Damit die Listenelemente nebeneinander angezeigt werden */
+    margin-right: 10px; /* Optional: Füge etwas Abstand zwischen den Elementen hinzu */
+}

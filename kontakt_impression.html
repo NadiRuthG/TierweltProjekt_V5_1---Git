@@ -1,0 +1,135 @@
+<!-- Deklaration des Dokumenttyps HTML -->
+<!DOCTYPE html>
+<!-- Beginn des HTML-Dokuments mit Sprachattribut Deutsch -->
+<html lang="de">
+<!-- Kopfbereich des Dokuments -->
+<head>
+    <!-- Zeichencodierung des Dokuments -->
+    <meta charset="UTF-8">
+    <!-- Einstellung der Anzeigegrösse für mobile Geräte -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titel des Dokuments -->
+    <title>Kontakt/Impression</title>
+    <!-- Einbindung einer externen CSS-Datei -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Externes JavaScript für Interaktivität -->
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+
+
+    <!-- Stile für die zusätzlichen Elemente -->
+    <style>
+        /* Stil für den Trennbalken */
+        #separator {
+            width: 100%;
+            height: 1px;
+            background-color: #ccc; /* Farbe des Balkens */
+            margin-top: 20px; /* Abstand zwischen Balken und Footer */
+        }
+
+        /* Stil für den Footer */
+        footer {
+            position: relative; /* Positionierung relativ zum Dokument */
+            padding-top: 20px; /* Platz oberhalb des Fussbereichs für den Balken */
+        }
+
+        /* Stil für den Button */
+        #acceptButton {
+            margin-top: 20px; /* Abstand zum vorherigen Element */
+        }
+    </style>
+</head>
+
+<!-- Hauptinhalt des Dokuments -->
+<body>
+    <!-- Überschrift der Webseite -->
+    <h1>Kontakt/Impression</h1>
+        <!-- Navigationsleiste -->
+    <!-- Kopfbereich der Webseite -->
+    <header>
+        <!-- Navigationsbereich der Webseite -->
+        <nav>
+            <!-- Ungeordnete Liste für Navigationslinks -->
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="korallenriffe.html">Korallenriffe</a></li>
+                <li><a href="tiefsee.html">Tiefsee</a></li>
+                <li><a href="polare_regionen.html">Polare Regionen</a></li>
+                <li><a href="tropische_korallenriffe.html">Tropische Korallenriffe</a></li>
+                <li><a href="meeresvögel.html">Meeresvögel</a></li>
+                <li><a href="meeressäuger.html">Meeressäuger</a></li>
+                <li><a href="fakten_statistiken.html">Fakten und Statistiken</a></li>
+                <li><a href="bildergalerie.html">Bildergalerie</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hauptinhalt der Webseite -->
+    <main>
+        <!-- Kontaktbereich -->
+        <section class="content-section">
+    <h2 style="font-size: 24px; font-weight: bold; color: #333;">Kontakt</h2>
+            <p>Haben Sie Fragen, Anregungen oder Feedback? Zögern Sie nicht, uns zu kontaktieren!</p>
+            <p>Unterwasserwelt GmbH<br>
+            Musterstrasse 123<br>
+            12345 Musterstadt<br>
+            Tel: 0123-456789<br>
+            Email: info@unterwasserwelt.com</p>
+        </section>
+        
+        <!-- Bereich Impression mit Bildergalerie -->
+        <section class="content-section">
+            <h2>Impression</h2>
+            <p>Erleben Sie mit uns die faszinierende Schönheit der Unterwasserwelt. Hier finden Sie eine Auswahl an beeindruckenden Bildern aus unseren Expeditionen.</p>
+            <!-- Fügen Sie hier Bilder ein, um die Eindrücke der Unterwasserwelt zu vermitteln -->
+            <div class="image-gallery">
+                <!-- Bild 1 -->
+                <div class="image-container">
+                    <img src="bilder/Kontakt_Impression/bild1.jpg" alt="Bild 1">
+                    <p class="image-source">Quelle: <a href="https://salzwasser.eu/blogs/salzwasser-freunde/uli-kunz" target="_blank">salzwasser.eu</a></p>
+                </div>
+                <!-- Bild 2 -->
+                <div class="image-container">
+                    <img src="bilder/Kontakt_Impression/bild2.jpg" alt="Bild 2">
+                    <p class="image-source">Quelle: <a href="https://saint-charles.eu/blogs/news/krilloel-omega3" target="_blank">saint-charles.eu</a></p>
+                </div>
+                <!-- Bild 3 -->
+                <div class="image-container">
+                    <img src="bilder/Kontakt_Impression/bild3.jpg" alt="Bild 3">
+                    <p class="image-source">Quelle: <a href="https://www.welt.de/kmpkt/article163960089/Warum-Blauwale-sich-vor-jeder-Mahlzeit-entscheiden-muessen.html" target="_blank">welt.de</a></p>
+                </div>
+                    <!-- Weitere Bilder können nach Bedarf hinzugefügt werden -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer mit Datenschutz-Link und Akzeptieren-Button -->
+    <footer>
+        <!-- Navigation unten -->
+        <nav id="navBottom">
+            <ol class="horizontal-list">
+                <li><a href="#top">Nach oben</a></li>
+            </ol>
+        </nav>
+
+        <!-- Trennbalken zwischen Footer und unterer Navigation -->
+        <div id="separator"></div>
+
+
+        <p class="footer-text">&copy; 2024 Unterwasserwelt GmbH | <a href="datenschutz.html" class="footer-text">Datenschutz</a></p>
+        <div class="button-container">
+            <button id="acceptButton" onclick="akzeptieren()">Ich habe es verstanden und akzeptiere</button>
+        </div>
+        <!-- CSRF-Token -->
+        <input type="hidden" id="csrfToken" value="GENERATED_CSRF_TOKEN">
+
+        <div class="social-media">
+            <!-- Social-Media-Links hier -->
+            <a href="https://github.com/NadiRuthG" target="_blank" rel="noopener noreferrer">
+                <img src="bilder/github-logo.png" alt="GitHub-Logo">
+        </div>
+    </footer>
+
+</body>
+</html>
